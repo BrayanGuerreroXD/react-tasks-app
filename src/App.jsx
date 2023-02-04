@@ -12,7 +12,7 @@ function App() {
 
   function createTask(taskTitle) {
     setTasks([...tasks, {
-      id: 4,
+      id: tasks.length,
       title: taskTitle,
       description: taskTitle
     }])
