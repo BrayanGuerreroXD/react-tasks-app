@@ -6,7 +6,12 @@ function TaskForm({ createTask }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    createTask(title, description);
+    createTask({
+      title: title,
+      description: description,
+    });
+    setTitle('')
+    setDescription('')
   };
 
   return (
