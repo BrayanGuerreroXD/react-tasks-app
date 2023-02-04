@@ -10,11 +10,11 @@ function App() {
     setTasks(data);
   }, []);
 
-  function createTask(taskTitle) {
+  function createTask(taskTitle, taskDescription) {
     setTasks([...tasks, {
       id: tasks.length,
       title: taskTitle,
-      description: taskTitle
+      description: taskDescription
     }])
   }
 
